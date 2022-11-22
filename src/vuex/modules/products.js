@@ -25,7 +25,9 @@ const actions = {
 				//local settings
         // return axios("http://localhost:3000/products", {
 				//prod settings
-        return axios("../db.json", {
+        // return axios("../db.json", {
+				// git pages
+				return axios("https://flashulk.github.io/CatalogOnVue/db.json", {
             method: "GET"
         }).then((products) => {
             commit("set_product", products.data);
