@@ -23,9 +23,9 @@ const mutations = {
 const actions = {
     get_product({commit}) {
 				//local settings
-        return axios("http://localhost:3000/products", {
+        // return axios("http://localhost:3000/products", {
 				//prod settings
-        // return axios("../db.json", {
+        return axios("../db.json", {
             method: "GET"
         }).then((products) => {
             commit("set_product", products.data);
